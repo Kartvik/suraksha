@@ -1,0 +1,61 @@
+{
+  "name": "suraksha-backend",
+  "version": "1.0.0",
+  "description": "Real-time emergency alert and dispatch backend system for women safety",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "nodemon --exec \"node --loader ts-node/esm\" src/app.ts",
+    "seed": "node --loader ts-node/esm src/utils/seed.ts",
+    "build": "tsc",
+    "start": "node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kartvik/suraksha.git"
+  },
+  "keywords": [
+    "women-safety",
+    "emergency-response",
+    "sos",
+    "real-time",
+    "express",
+    "typescript",
+    "socket-io",
+    "bullmq"
+  ],
+  "author": "Kartvik Singh <kartviksingh@gmail.com>",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@socket.io/redis-adapter": "^8.3.0",
+    "bcryptjs": "^3.0.3",
+    "bullmq": "^5.78.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "helmet": "^8.2.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.6.3",
+    "morgan": "^1.11.0",
+    "nodemailer": "^8.0.10",
+    "redis": "^6.0.0",
+    "socket.io": "^4.8.3",
+    "twilio": "^6.0.2",
+    "uuid": "^14.0.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^25.9.2",
+    "@types/nodemailer": "^8.0.0",
+    "@types/socket.io": "^3.0.1",
+    "@types/uuid": "^10.0.0",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
